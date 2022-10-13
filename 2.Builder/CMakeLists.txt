@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.2)
+project(builder)
+include_directories(include)
+add_executable(motivation src/motivation.cpp)
+add_executable(builder src/builder.cpp)
+add_executable(fluent src/fluent.cpp)
+add_executable(groovy src/groovy.cpp)
+add_executable(exercise src/exercise.cpp)
+
+add_library(libfacets src/Facets/Person.cpp src/Facets/PersonBuilder.cpp)
+add_executable(facets src/facets.cpp)
+target_link_libraries(facets libfacets)
