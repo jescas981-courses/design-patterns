@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.2)
+project(composite)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+include_directories(include)
+add_executable(geometric_shapes src/geometric_shapes.cpp)
+add_executable(neuronal_networks src/neuronal_networks.cpp)
+add_executable(array_backed src/array_backed.cpp)
+add_executable(exercise src/exercise.cpp)
